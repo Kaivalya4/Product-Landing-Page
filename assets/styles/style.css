@@ -1,0 +1,246 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+body,html{
+    margin:0px;
+    background-color: #eee;
+}
+
+#header-img,.img1{
+    width  :100px;
+    max-width : 100%;
+    border:none;
+    height : 100px;
+}
+#header{
+    display : flex;
+    flex-direction: column;
+    padding-left : 0.5rem;
+    align-items: center;
+    position : fixed;
+    top:0;
+    width : 100%;
+    background-color : #eee;
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nav-link{
+    text-decoration: none;
+    font-style: bold;
+    font-family: "Lato";
+    margin :0.125rem;
+}
+#nav-bar{
+    margin-top : -20px;
+    font-size: 1.05rem;
+}
+#logo{
+    display: flex;
+    font-family: Lato;
+}
+#header #logo h1{
+    font-size : 28px;
+    margin-top : 30px;
+    background: linear-gradient(rgb(83, 83, 236),rgb(5, 5, 19));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#spacer{
+    width: 100%;
+    height : 150px;
+}
+
+#content1{
+    display: flex;
+    flex-direction: column;
+    margin-left : 5%;
+    margin-right : 5%;
+    align-items: center;
+    padding : 0;
+}
+
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"]{
+    padding-left : 2.5%;
+    padding-top : 1.25%;
+    padding-bottom : 1.25%;
+    border : 1px solid black;
+    margin-bottom : 10px;
+    height : 25px;
+}
+
+#submit{
+    font-family: Lato;
+    margin : auto;
+    font-size : 20px;
+    background-color: rgb(173, 173, 222);
+    border :none;
+}
+#submit:hover{
+    background-image: linear-gradient(115deg,rgb(97, 97, 223) , rgb(120, 119, 194));
+    transition : transform 1s ease-in-out;
+    transform-origin:50% 50% ;
+    transform : scaleX(121%) ;
+}
+
+#Quality1 , #Quality2 , #Quality3{
+    margin : 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato;
+    max-width : 850px;
+}
+
+.img1{
+    display: none;
+}
+.Quality1-content{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+}
+
+.p1-style{
+    margin-top : -20px;
+    font-size : 15px;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    margin :  0.5rem;
+}
+
+#pricing{
+    width : 300px;
+    font-family: Lato;
+}
+.pricing-type{
+    border : 2px solid black;
+    margin-bottom : 10px;
+    padding-bottom : 30px;
+}
+.pt-head{
+    background-color: gainsboro;
+    padding : 1rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+.ul-class{
+    margin-left : 10%;
+    margin-right : 20%;
+    text-align: center;
+}
+button{
+    margin-left :7rem;
+    font-family: Lato;
+    font-size : 20px;
+    background-color: rgb(173, 173, 222);
+    border :none;
+}
+button:hover{
+    background-image: linear-gradient(115deg,rgb(97, 97, 223) , rgb(120, 119, 194));
+    transition : transform 1s ease-in-out;
+    transform-origin:50% 50% ;
+    transform : scaleX(121%) ;   
+}
+.li-child1{
+    font-weight: 900;
+    font-size : 20px;
+}
+
+
+
+
+@media screen and (min-width:600px) {
+    .navlink{
+        font-size : 1.025rem;
+    }
+    .img1{
+        display: inline;
+        margin-right: 10px;
+    }
+    .Quality1-content{
+        align-items: flex-start;
+    }
+    .p1-style{
+        text-align: justify;
+    }
+    #header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #spacer{
+        height : 100px;
+    }
+}
+
+@media screen and (min-width : 650px){
+    #logo{
+        width : 65%;
+    }
+    #nav-bar{
+        width : 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width : 600px){
+    iframe{
+        width : 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width : 856px) {
+    #pricing{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width : 100%;
+    }
+    .pricing-type{
+        border : 1px solid black;
+        height : 250px;
+        width : 270px;
+    }
+    .ul-class{
+        margin-left : 5px;
+    }
+    button{
+        margin-left :100px;
+    }
+}
+
+@media screen and (min-width : 1000px){
+    #pricing{
+        width : 1000px;
+    }
+    .pricing-type{
+        border : 1px solid black;
+        height : 250px;
+        width : 320px;
+    }
+    .ul-class{
+        margin-left : 5px;
+    }
+    button{
+        margin-left :120px;
+    }
+}
