@@ -154,7 +154,7 @@ button:hover{
     background-image: linear-gradient(115deg,rgb(97, 97, 223) , rgb(120, 119, 194));
     transition : transform 1s ease-in-out;
     transform-origin:50% 50% ;
-    transform : scaleX(121%) ;   
+    transform : scaleX(121%) ;  
 }
 .li-child1{
     font-weight: 900;
